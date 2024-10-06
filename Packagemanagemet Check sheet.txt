@@ -1,0 +1,37 @@
+APT (Advance Package Tool):
+
+#) Install a package
+
+sudo apt-get install <package name>
+
+#) Update & Upgrade
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+
+#) Remove the Package
+
+sudo apt-get remove <package_name>
+
+#) Search a install Package
+
+apt-cache search <package_name>
+
+#) Remove the dependance
+
+sudo apt autoremove
+
+
+DPKG (Debian Package Manager):
+
+#) Installing a package from a .deb file:
+
+sudo dpkg -i package.deb
+
+#) Removing a package:
+
+sudo dpkg -r package-name
+
+#) Querying package information:
+
+dpkg -l | grep package-name
