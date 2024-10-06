@@ -35,3 +35,17 @@ sudo dpkg -r package-name
 #) Querying package information:
 
 dpkg -l | grep package-name
+
+*** Permission Management ***
+
+#) give “execute” permission to the world (“other”) for a text file.
+
+sudo chmod o+x <file_name>
+
+#) Chanage the permission at once
+
+sudo chmod ugo-rwx <file_name>
+
+*** Permissionmanagement (OCTAL) ***
+#) Give all permission for all
+sudo chmod 777 <file_name>
